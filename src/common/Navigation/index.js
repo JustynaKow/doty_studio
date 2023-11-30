@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { StyledNavigation } from "./styled";
+import { StyleSheetManager } from "styled-components";
 
 const Navigation = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -20,12 +21,14 @@ const Navigation = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []); 
+  }, []);
 
   return (
-    <StyledNavigation scrolled={scrolled}>
-      DOTY STUDIO by Aneta Paszkowska
-    </StyledNavigation>
+    <StyleSheetManager shouldForwardProp={(prop) => prop !== "scrolled"}>
+      <StyledNavigation scrolled={scrolled}>
+        DOTY STUDIO by Aneta Paszkowska
+      </StyledNavigation>
+    </StyleSheetManager>
   );
 };
 
