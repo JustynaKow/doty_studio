@@ -17,7 +17,9 @@ const Examples = () => (
       {examples.map(({ imgSrc, subtitle, title, url }) => (
         <Element key={title}>
           <Container>
-            <img src={imgSrc} width="348px" alt={title} />
+            <Link href={url} target="_blank" rel="noreferrer noopener">
+              <img src={imgSrc} width="348px" alt={subtitle} />
+            </Link>
             <Subtitle>{subtitle}</Subtitle>
             <Title>{title}</Title>
           </Container>
