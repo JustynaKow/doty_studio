@@ -1,5 +1,6 @@
 import {
   StyledExamples,
+  Heading,
   Wrapper,
   Element,
   Container,
@@ -12,7 +13,7 @@ import { examples } from "./examples";
 
 const Examples = () => (
   <StyledExamples>
-    <h2>DESIGN OF THE YEAR</h2>
+    <Heading>DESIGN OF THE YEAR</Heading>
     <Wrapper>
       {examples.map(({ imgSrc, subtitle, title, url }) => (
         <Element key={title}>

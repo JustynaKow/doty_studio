@@ -5,9 +5,16 @@ export const StyledExamples = styled.section`
   text-transform: uppercase;
 `;
 
+export const Heading = styled.h2`
+  @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
+    text-align: center;
+  }
+`;
+
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoint.tabletMax}px) {
     flex-wrap: wrap;
