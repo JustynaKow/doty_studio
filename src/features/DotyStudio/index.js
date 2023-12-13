@@ -1,4 +1,5 @@
 import AboutUs from "./AboutUs";
+import Ending from "./Ending";
 import Examples from "./Examples";
 import Header from "./Header";
 import Offer from "./Offer";
@@ -13,6 +14,7 @@ const DotyStudio = () => (
     <Examples />
     <AboutUs />
     <Offer />
+    <Ending />
   </>
 );
 
