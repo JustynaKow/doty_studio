@@ -11,7 +11,7 @@ import { graphic } from "./graphic";
 
 const Graphic = () => (
   <StyledGraphic>
-    <Heading>PROJEKT WNĘTRZ</Heading>
+    <Heading>PROJEKTOWANIE GRAFICZNE</Heading>
     <Paragraph>
       TWORZYMY indywidualne projekty dopasowane do potrzeb klienta.
     </Paragraph>
